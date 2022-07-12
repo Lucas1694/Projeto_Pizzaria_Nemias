@@ -31,6 +31,31 @@ body{
     background:#eee;
 }
 
+section{
+
+    padding: 2rem 9%;
+    
+
+}
+
+.servico{
+
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.servico span{
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+
+}
+
 .btn{
 
     margin-top: 1rem;
@@ -259,6 +284,67 @@ body{
 
 }
 
+.home{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/bk.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    
+}
+
+.home .content{
+
+    text-align: center;
+    width: 60rem;
+
+}
+
+.home .content h3{
+
+    color: black;
+    font-size: 4rem;
+}
+
+.home .content h3 span{
+
+    color: var(--orange);
+    
+}
+
+.home .content p{
+
+    color: black;
+    font-size: 1.89rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.servico .box-conteiner{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.servico .box-conteiner .box{
+
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+
+
+}
+
+
+
 
 
 
@@ -279,6 +365,12 @@ body{
         padding: 2rem;
 
     }
+    section{
+
+        padding: 2rem;
+        
+    
+    }
 
 }
 
@@ -290,10 +382,16 @@ body{
     
     }
 
+    .header .pesquisar-form {
+
+        width: 90%;
+
+    }
+
     .header .navbar{
         position: absolute;
         top: 110%;
-        right: 2rem;
+        right: -110%;
         width: 30rem;
         box-shadow: var(--box-shadow);
         border-radius: .5rem;
@@ -301,10 +399,19 @@ body{
 
     }
 
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+
+    }
+
     .header .navbar a{
 
         font-size:  2rem;
-        
+        margin: 2rem 2.5rem;
+        display: block;
+
+
     }
 
 }
@@ -317,5 +424,10 @@ body{
 
     }
 
+    .servico{
+
+        font-size: 2rem;
+
+    }
 
 }
